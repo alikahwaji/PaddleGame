@@ -183,7 +183,7 @@ function moveBall() {
 function increaseScore() {
   score++; // increment by one
 
-  if (score % (brickRowCount * brickRowCount) === 0) { // check the if there are no bricks if true redraw the brocks wall
+  if (score % (brickColumnCount * brickRowCount) === 0) { // check the if there are no bricks if true redraw the bricks wall. score of 45 % 45 bricks becomes 0
     showAllBricks(); // create bricks wall
   }
 }
